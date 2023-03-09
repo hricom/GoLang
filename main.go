@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	greetin := "Hello there, my first code of GO :D"
+	greetin := "Hello there, my first code of GO :D \n"
 	fmt.Print(greetin)
 
 	// slide
@@ -22,11 +22,11 @@ func main() {
 	}
 	// Example 2
 	for i, number := range numbers {
-		fmt.Print("Index: ", i, "Value: ", number)
+		fmt.Print("\n Index: ", i, " Value: ", number)
 	}
 	// Example 3
 	for _, number := range numbers {
-		fmt.Print("Value: ", number)
+		fmt.Print("\n Value: ", number)
 	}
 
 	fruits := []string{
@@ -41,7 +41,7 @@ func main() {
 			continue
 		}
 
-		fmt.Print("Fruit: ", fruit)
+		fmt.Print("\n Fruit: ", fruit)
 	}
 
 }
