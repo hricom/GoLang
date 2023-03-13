@@ -24,6 +24,7 @@ func SetMyCountry(country string) error {
 	return nil
 }
 
+// List Lista todos los paices
 func List() {
 	for i, c := range collection {
 		myCountryMsg := ""

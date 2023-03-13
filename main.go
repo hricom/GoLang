@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/hricom/GoLang/countries"
+)
 
 func main() {
 	greetin := "Hello there, my first code of GO :D \n"
@@ -43,5 +47,18 @@ func main() {
 
 		fmt.Print("\n Fruit: ", fruit)
 	}
+	fmt.Print("\n==========================\n")
+	// Begin Practice packs
+	countries.Add("USA")
+	countries.Add("Mexito")
+	countries.Add("Japan")
+	countries.Add("Spain")
 
+	var err error = nil
+	err = countries.SetMyCountry("Japan")
+	if err != nil {
+		panic(err)
+	}
+	countries.List()
+	// End Practice packs
 }
